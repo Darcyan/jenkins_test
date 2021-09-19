@@ -21,6 +21,13 @@ class NewCase(unittest.TestCase):
         # print("test_02 going......")
         # self.assertEqual(aa, '123', msg="不相等")
         pass
+
+    def test_03(self):
+        # aa = '123'
+        #
+        # print("test_02 going......")
+        # self.assertEqual(aa, '123', msg="不相等")
+        pass
 if __name__=='__main__':
     sendEmail=Send_email()
     ReportPath='../report/TestReport2.html'
