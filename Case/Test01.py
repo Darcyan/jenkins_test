@@ -1,4 +1,9 @@
 import requests
+import sys
+#sys.path.append("F:\ProgramFiles\jenkins_python\jenkins_test")
+import os,sys
+dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append("F:\ProgramFiles\Lib\site-packages")
 import unittest
 from HTMLTestRunner import HTMLTestRunner
 from util.send_email import Send_email
@@ -22,12 +27,7 @@ class NewCase(unittest.TestCase):
         # self.assertEqual(aa, '123', msg="不相等")
         pass
 
-    def test_03(self):
-        # aa = '123'
-        #
-        # print("test_02 going......")
-        # self.assertEqual(aa, '123', msg="不相等")
-        pass
+  
 if __name__=='__main__':
     sendEmail=Send_email()
     ReportPath='../report/TestReport2.html'
