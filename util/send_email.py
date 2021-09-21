@@ -10,7 +10,7 @@ class Send_email():
     global email_host
     global password
     email_host="smtp.163.com"
-    password="123456abcd" #进入邮箱开启smtp/pop3服务，获取授权码，需要使用授权码登录才能发送，不是邮箱密码
+    password="YBFCKAQIOHFUMUCL" #进入邮箱开启smtp/pop3服务，获取授权码，需要使用授权码登录才能发送，不是邮箱密码
     send_user = "yanshunhua163@163.com"
 
     def send_mail(self,user_list,sub,content,file_names):
